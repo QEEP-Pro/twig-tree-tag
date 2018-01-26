@@ -1,8 +1,0 @@
-{% tree key, item in files %}
-  {% if treeloop.first %}<ul>{% endif %}
-    <li>
-        {{ key }}
-        {% subtree item %}
-    </li>
-  {% if treeloop.last %}</ul>{% endif %}
-{% endtree %}

@@ -1,8 +1,0 @@
-{% tree item in menu %}
-  {% if treeloop.first %}<ul>{% endif %}
-    <li>
-        <a href="{{ item.url }}">{{ item.name }}</a>
-        {% subtree item.children %}
-    </li>
-  {% if treeloop.last %}</ul>{% endif %}
-{% endtree %}
