@@ -1,6 +1,6 @@
 <?php
 
-namespace JordanLev\TwigTreeTag\Twig\Node;
+namespace QEEP\TwigTreeTag\Twig\Node;
 
 class TreeNode extends \Twig_Node
 {

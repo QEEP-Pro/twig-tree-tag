@@ -1,8 +1,8 @@
 <?php
 
-namespace JordanLev\TwigTreeTag\Twig\TokenParser;
+namespace QEEP\TwigTreeTag\Twig\TokenParser;
 
-use JordanLev\TwigTreeTag\Twig\Node\TreeNode;
+use QEEP\TwigTreeTag\Twig\Node\TreeNode;
 
 class TreeTokenParser extends \Twig_TokenParser
 {
