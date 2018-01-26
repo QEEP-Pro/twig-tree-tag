@@ -96,7 +96,7 @@ $twig = new \Twig_Environment(
     new \Twig_Loader_Filesystem(__DIR__.'/view/')
 );
 
-$twig->addExtension(new JordanLev\TwigTreeTag\Twig\Extension\TreeExtension());
+$twig->addExtension(new QEEP\TwigTreeTag\Twig\Extension\TreeExtension());
 
 // (...)
 ```
