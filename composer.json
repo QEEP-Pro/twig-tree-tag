@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "twig/twig": "^1.20 || ^2.0"
+        "twig/twig": "^2.0"
     },
     "autoload": {
          "psr-4": {"JordanLev\\TwigTreeTag\\": "src"}
