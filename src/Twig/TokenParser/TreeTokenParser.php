@@ -76,15 +76,25 @@ class TreeTokenParser extends \Twig_TokenParser
         // key, item
         if (count($targets) > 1) {
             $keyTarget   = $targets->getNode(0);
-            $keyTarget   = new \Twig_Node_Expression_AssignName($keyTarget->getAttribute('name'), $keyTarget->getLine());
+            $keyTarget   = new \Twig_Node_Expression_AssignName(
+                $keyTarget->getAttribute('name'),
+                $keyTarget->getTemplateLine()
+            );
+
             $valueTarget = $targets->getNode(1);
-            $valueTarget = new \Twig_Node_Expression_AssignName($valueTarget->getAttribute('name'), $valueTarget->getLine());
+            $valueTarget = new \Twig_Node_Expression_AssignName(
+                $valueTarget->getAttribute('name'),
+                $valueTarget->getTemplateLine()
+            );
 
         // (implicit _key,) item
         } else {
             $keyTarget   = new \Twig_Node_Expression_AssignName('_key', $lineno);
             $valueTarget = $targets->getNode(0);
-            $valueTarget = new \Twig_Node_Expression_AssignName($valueTarget->getAttribute('name'), $valueTarget->getLine());
+            $valueTarget = new \Twig_Node_Expression_AssignName(
+                $valueTarget->getAttribute('name'),
+                $valueTarget->getTemplateLine()
+            );
         }
 
         return new TreeNode($keyTarget, $valueTarget, $seq, $as, $data, $lineno, $this->getTag());
