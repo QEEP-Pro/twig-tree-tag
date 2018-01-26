@@ -82,10 +82,12 @@ To handle the edge case where you want to start a new tree inside another tree (
 ## Installation
 
 ```sh
-composer require jordanlev/twig-tree-tag
+composer require jqeep-pro/twig-tree-tag
 ```
 
 ## Usage
+
+### Standalone
 
 ```php
 $loader = require __DIR__.'/vendor/autoload.php';
@@ -97,6 +99,16 @@ $twig = new \Twig_Environment(
 $twig->addExtension(new JordanLev\TwigTreeTag\Twig\Extension\TreeExtension());
 
 // (...)
+```
+
+### Symfony 3
+
+Add following lines to `services.yml`:
+```yml
+app.twig.tree_extension:
+  class: QEEP\TwigTreeTag\Twig\Extension\TreeExtension
+  tags:
+    - { name: twig.extension }
 ```
 
 ## License
