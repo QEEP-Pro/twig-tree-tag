@@ -11,7 +11,7 @@ Requires PHP 5.4 or higher (due to usage of `$this` in anonymous function of com
 The `{% tree %}` tag works almost like `{% for %}`, but inside a `{% tree %}` you can call `{% subtree var %}` to
 recursively run your `{% tree %}` block with the given `var`. The primary use-case for this tag is nested navigation menus.
 
-This extension was written by [Alain Tiemblo](https://github.com/ninsuo), (with a few very minor changes by [Jordan Lev](https://github.com/jordanlev)).
+This extension was written by [Alain Tiemblo](https://github.com/ninsuo), (with a few very minor changes by [Jordan Lev](https://github.com/jordanlev)). Adapted for Twig 2 by [Igor Kamyshev](https://github.com/TheNovel).
 
 ## Usage Example
 
@@ -37,9 +37,6 @@ Just like a `{% for %}` loop, you can access the key of each list item:
   </li>
 {% endtree %}
 ```
-
-See the [demo directory](demo/) for more examples
-
 
 ## What is the `treeloop` var?
 
