@@ -1,5 +1,5 @@
 {
-    "name": "jordanlev/twig-tree-tag",
+    "name": "qeep-pro/twig-tree-tag",
     "type": "library",
     "description": "A Twig extension for succinctly traversing nested lists (e.g. navigation menus).",
     "keywords": [],
@@ -13,10 +13,14 @@
         {
             "name": "Jordan Lev",
             "email": "github@jordanlev.com"
+        },
+        {
+            "name": "QEEP-Pro",
+            "email": "info@qeep.pro"
         }
     ],
     "require": {
-        "twig/twig": "^1.20"
+        "twig/twig": "^1.20 || ^2.0"
     },
     "autoload": {
          "psr-4": {"JordanLev\\TwigTreeTag\\": "src"}
