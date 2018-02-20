@@ -82,7 +82,7 @@ To handle the edge case where you want to start a new tree inside another tree (
 ## Installation
 
 ```sh
-composer require jqeep-pro/twig-tree-tag
+composer require qeep-pro/twig-tree-tag
 ```
 
 ## Usage
